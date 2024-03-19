@@ -30,6 +30,7 @@ const pageBox = document.querySelector('.page-box');
     const InputApellidoRegistrar = document.querySelector('.apellido-registrar');
     const InputEmailRegistrar = document.querySelector('.email-registrar');
     const InputContraseñaRegistrar = document.querySelector('.contraseña-registrar');
+    const btnBackRegistrar = document.querySelector('.btn-back-registrar');
     const btnRegistrar = document.querySelector('.btn-registrar');
 
 
@@ -41,7 +42,14 @@ btnCrearCuenta.onclick = (e)=>{
     Title.innerHTML='Registrate';
     Subtitle.innerHTML='¿No tienes una cuenta?';
 }
-
+//Retroceder a la pagina de inicio al clickear Regresar
+btnBackRegistrar.onclick = (e) => {
+    e.preventDefault();
+    pageBox.classList.remove('active-regi')
+    Title.innerHTML = 'Inicia sesión';
+    Subtitle.innerHTML = 'Por favor inicia sesión para usar la plataforma';
+    InputEmail.focus()
+};
 
 
 //Avanzar al clickear Siguiente
