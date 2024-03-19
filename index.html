@@ -7,54 +7,78 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
     <div class="container">
         <div class="login-box">
             <form action="#">
+
+
                 <div class="page-box">
                     <div class="login-title">
-                        <h2 class="loginTitle-text">Inicia sesión</h2>
-                        <p class="user-email">Por favor inicia sesión para usar la plataforma</p>
+                        <h2 class="Title-text">Inicia sesión</h2>
+                        <p class="Subtitle-text">Por favor inicia sesión para usar la plataforma</p>
                     </div>
+
 
                     <div class="page email-page">
                         <div class="input-box">
-                            <input type="text" class="email" autofocus required>
+                            <input type="text" class="correo-ingresar" autofocus required>
                             <label>Ingresa tu correo electrónico</label>
                         </div>
-
                         <div class="forgot">
                             <a href="#">¿Olvidaste tu correo?</a>
                         </div>
-
                         <div class="guest-mode">
                             <p>¿No es tu computadora? Utilice el modo de invitado para iniciar sesión de forma privada.</p>
                             <a href="#">Mas información</a>
                         </div>
-
-                        
                         <div class="btn-box">
-                            <a href="#" class="btn-createaccount">Crear una cuenta</a>
+                            <a href="#" class="btn-crear-cuenta">Crear una cuenta</a>
                             <button class="btn-next">Siguiente</button>
                         </div>
                     </div>
 
+
                     <div class="page password-page">
                         <div class="input-box">
-                            <input type="password" class="password" required>
+                            <input type="password" class="contraseña-ingresar" required>
                             <label>Ingresa tu contraseña</label>
                         </div>
 
                         <div class="forgot show">
                             <a href="#">¿Olvidaste tu contraseña?</a>
-                            <label><input type="checkbox" class="checkbox-pass"> Mostrar contraseña</label>
+                            <label><input type="checkbox" class="checkbox-contraseña"> Mostrar contraseña</label>
                         </div>
-
                         <div class="btn-box">
                             <button class="btn-back">Atrás</button>
-                            <button type="submit" class="btn-login">Iniciar sesión</button>
+                            <button type="submit" class="btn-iniciar-sesion">Iniciar sesión</button>
                         </div>
                     </div>
+
+
+                    <div class="page registration-page">
+                        <div class="input-box">
+                            <input type="text" class="nombre-registrar" autofocus required>
+                            <label>Ingresa tu nombre</label>
+                        </div>
+                        <div class="input-box">
+                            <input type="text" class="apellido-registrar" autofocus required>
+                            <label>Ingresa tu apellido</label>
+                        </div>
+                        <div class="input-box">
+                            <input type="email" class="email-registrar" required>
+                            <label>Ingresa tu correo electrónico</label>
+                        </div>
+                        <div class="input-box">
+                            <input type="password" class="contraseña-registrar" required>
+                            <label>Ingresa tu contraseña</label>
+                        </div>
+                        
+                        <div class="btn-box">
+                            <button type="submit" class="btn-registrar">Registrarse</button>
+                        </div>
+                    </div>
+
+
                 </div>
             </form>
         </div>

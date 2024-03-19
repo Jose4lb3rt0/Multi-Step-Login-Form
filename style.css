@@ -38,29 +38,45 @@ body {
     flex-direction: column;
 }
 
+/*PAGINA GENERAL*/
 .page-box .page {
     width: 100%;
 }
 
+/* PÁGINA DEL CORREO ELECTRÓNICO */
 .page-box .page.email-page {
     transform: translateX(0);
     transition: .25s ease-in-out;
 }
-
 .page-box.active-pass .page.email-page {
     transform: translateX(-500px);
 }
+.page-box.active-regi .page.email-page {
+    transform: translateX(-500px);
+}
 
+/* PÁGINA DE LA CONTRASEÑA */
 .page-box .page.password-page {
     position: absolute;
     transform: translateX(500px);
     margin-top: 140px;
     transition: .25s ease-in-out;
 }
-
 .page-box.active-pass .page.password-page {
     transform: translateX(0);
 }
+
+/* PÁGINA PARA REGISTRARSE */
+.page-box .page.registration-page {
+    position: absolute;
+    transform: translateX(1000px);
+    margin-top: 140px;
+    transition: .25s ease-in-out;
+}
+.page-box.active-regi .page.registration-page {
+    transform: translateX(0); 
+}
+
 
 .page-box .login-title {
     text-align: center;
