@@ -43,47 +43,70 @@ body {
     width: 100%;
 }
 
-/* PÁGINA DEL CORREO ELECTRÓNICO */
-.page-box .page.email-page {
-    transform: translateX(0);
-    transition: .25s ease-in-out;
-}
-.page-box.active-pass .page.email-page {
-    transform: translateX(-500px);
-}
-.page-box.active-regi .page.email-page {
-    transform: translateX(-500px);
-}
 
-/* PÁGINA DE LA CONTRASEÑA */
-.page-box .page.password-page {
-    position: absolute;
-    transform: translateX(500px);
-    margin-top: 140px;
-    transition: .25s ease-in-out;
-}
-.page-box.active-pass .page.password-page {
-    transform: translateX(0);
-}
-
-/* PÁGINA PARA REGISTRARSE */
-.page-box .page.registration-page {
-    position: absolute;
-    transform: translateX(1000px);
-    margin-top: 90px;
-    transition: .25s ease-in-out;
-}
-.page-box.active-regi .page.registration-page {
-    transform: translateX(0); 
-}
+    /* PÁGINA DEL CORREO ELECTRÓNICO */
+    .page-box .page.email-page {
+        transform: translateX(0);
+        transition: .25s ease-in-out;
+    }
+    .page-box.active-pass .page.email-page {
+        transform: translateX(-500px);
+    }
+    .page-box.active-regi .page.email-page {
+        transform: translateX(-500px);
+    }
+    .page-box.active-recupass .page.email-page {
+        transform: translateX(-500px);
+    }
 
 
-.page.registration-page .input-box {
-    margin-bottom: 10px; /* Agregar un margen inferior entre las cajas de entrada */
+    /* PÁGINA DE LA CONTRASEÑA */
+    .page-box .page.password-page {
+        position: absolute;
+        transform: translateX(500px);
+        margin-top: 140px;
+        transition: .25s ease-in-out;
+    }
+    .page-box.active-pass .page.password-page {
+        transform: translateX(0);
+    }
+    .page-box.active-recupass .page.password-page {
+        transform: translateX(-500px);
+    }
+
+
+    /* PÁGINA PARA REGISTRARSE */
+    .page-box .page.registration-page {
+        position: absolute;
+        transform: translateX(1000px);
+        margin-top: 95px;
+        transition: .25s ease-in-out;
+    }
+    .page-box.active-regi .page.registration-page {
+        transform: translateX(0); 
+    }
+
+
+    /* PÁGINA PARA RECUPERAR CONTRASEÑA */
+    .page-box .page.recover-password-page {
+        position: absolute;
+        transform: translateX(1500px);
+        margin-top: 140px;
+        transition: .25s ease-in-out;
+    }
+    .page-box.active-recupass .page.recover-password-page {
+        transform: translateX(0); 
+    }
+
+    
+.page.registration-page .input-box,
+.page.recover-password-page .input-box {
+    margin-bottom: 20px; /* Agregar un margen inferior entre las cajas de entrada */
 }
 
-.page.registration-page .btn-box {
-    margin-top: 10px; /* Agregar un margen superior entre las cajas de botones y las cajas de entrada */
+.page.registration-page .btn-box,
+.page.recover-password-page .btn-box {
+    margin-top: 20px; /* Agregar un margen superior entre las cajas de botones y las cajas de entrada */
 }
 
 .page-box .login-title {
