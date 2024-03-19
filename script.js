@@ -56,7 +56,7 @@ btnBackRegistrar.onclick = (e) => {
 btnNext.onclick = (e) => {
     e.preventDefault();
     pageBox.classList.add('active-pass');
-    setTimeout(() => passwordInput.focus(), 500);
+    setTimeout(() => InputPassword.focus(), 500);
     Title.innerHTML = 'Bienvenido';
     Subtitle.innerHTML = InputEmail.value;
 };

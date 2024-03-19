@@ -70,13 +70,21 @@ body {
 .page-box .page.registration-page {
     position: absolute;
     transform: translateX(1000px);
-    margin-top: 140px;
+    margin-top: 90px;
     transition: .25s ease-in-out;
 }
 .page-box.active-regi .page.registration-page {
     transform: translateX(0); 
 }
 
+
+.page.registration-page .input-box {
+    margin-bottom: 10px; /* Agregar un margen inferior entre las cajas de entrada */
+}
+
+.page.registration-page .btn-box {
+    margin-top: 10px; /* Agregar un margen superior entre las cajas de botones y las cajas de entrada */
+}
 
 .page-box .login-title {
     text-align: center;
